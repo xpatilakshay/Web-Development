@@ -1,0 +1,148 @@
+/* Reset default margin and padding, set box-sizing and font for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Fullscreen body with background image and centered content */
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url('Resources\\bg2.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling the form's table container */
+form table {
+  width: 700px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  backdrop-filter: blur(10px); /* Blur behind glassmorphic effect */
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Soft border */
+}
+
+/* Table cell styling for spacing and equal width */
+form table td {
+  padding: 0 10px;
+  width: 50%;
+}
+
+/* Wrapper for input fields and icons */
+.input-box {
+  position: relative;
+  margin: 15px 0;
+  width: 100%;
+}
+
+/* Heading styling */
+h2 {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 10px; /* Padding leaves space for icons */
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  color: #000;
+  position: relative;
+}
+
+/* Labels are positioned over inputs */
+.input-box label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  pointer-events: none; /* Prevent clicks */
+  transition: 0.3s ease;
+}
+
+/* Label floats up when input is focused or has value */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/* Icon styling inside input fields */
+.input-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 1.2rem;
+}
+
+/* Paragraph styling for "Remember me", links, etc. */
+p {
+  color: #000;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Link styling */
+p a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* Submit button styling */
+#btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+
+/* Hover effect for button */
+#btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Styling for the <select> dropdown (gender) */
+.input-box select {
+  width: 100%;
+  padding: 12px 40px 12px 10px;
+  font-size: 1.1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #000;
+  appearance: none; /* Removes default OS-specific styles */
+}
+
+/* Floating label effect for dropdown on focus or valid */
+.input-box select:focus ~ label,
+.input-box select:valid ~ label {
+  top: -10px;
+  font-size: 0.9rem;
+  color: #000;
+}

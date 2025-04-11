@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title -->
+    <title>Login</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Login form starts -->
+    <form>
+      <table>
+        <!-- Header row -->
+        <tr>
+          <td colspan="3"><h2>Login</h2></td>
+        </tr>
+
+        <!-- Email input row -->
+        <tr>
+          <td colspan="3">
+            <div class="input-box">
+              <!-- Email icon -->
+              <i class="fa-solid fa-envelope"></i>
+
+              <!-- Email input field -->
+              <input id="email" type="text" required />
+
+              <!-- Email label -->
+              <label for="email">Email</label>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Password input row -->
+        <tr>
+          <td colspan="3">
+            <div class="input-box">
+              <!-- Password icon -->
+              <i class="fa-solid fa-lock"></i>
+
+              <!-- Password input field -->
+              <input id="pass" type="password" required />
+
+              <!-- Password label -->
+              <label for="pass">Password</label>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Remember Me and Forgot Password -->
+        <tr>
+          <td colspan="3">
+            <p>
+              <!-- Remember Me checkbox -->
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember Me</label>
+
+              <!-- Forgot Password link -->
+              <a href="#">Forgot Password ?</a>
+            </p>
+          </td>
+        </tr>
+
+        <!-- Login button -->
+        <tr>
+          <td colspan="3">
+            <input id="btn" type="submit" value="Login" />
+          </td>
+        </tr>
+
+        <!-- Register link -->
+        <tr>
+          <td colspan="3">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <!-- Login form ends -->
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title -->
+    <title>Register</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Registration form starts -->
+    <form>
+      <table>
+        <!-- Form heading -->
+        <tr>
+          <td colspan="3"><h2>Register</h2></td>
+        </tr>
+
+        <!-- First and Last Name -->
+        <tr>
+          <td>
+            <div class="input-box">
+              <!-- User icon -->
+              <i class="fa-solid fa-user"></i>
+              <!-- First name input -->
+              <input id="firstname" type="text" required />
+              <label for="firstname">First Name</label>
+            </div>
+          </td>
+          <td>
+            <div class="input-box">
+              <i class="fa-solid fa-user"></i>
+              <input id="lastname" type="text" required />
+              <label for="lastname">Last Name</label>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Username and Email -->
+        <tr>
+          <td>
+            <div class="input-box">
+              <i class="fa-solid fa-user-tag"></i>
+              <input id="username" type="text" required />
+              <label for="username">Username</label>
+            </div>
+          </td>
+          <td>
+            <div class="input-box">
+              <i class="fa-solid fa-envelope"></i>
+              <input id="email" type="email" required />
+              <label for="email">Email</label>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Password and Gender -->
+        <tr>
+          <td>
+            <div class="input-box">
+              <i class="fa-solid fa-lock"></i>
+              <input id="pass" type="password" required />
+              <label for="pass">Password</label>
+            </div>
+          </td>
+          <td>
+            <div class="input-box">
+              <i class="fa-solid fa-venus-mars"></i>
+              <!-- Gender selection -->
+              <select id="gender" required>
+                <option value="" disabled selected hidden></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="gender">Gender</label>
+            </div>
+          </td>
+        </tr>
+
+        <!-- City and State -->
+        <tr>
+          <td>
+            <div class="input-box">
+              <i class="fa-solid fa-city"></i>
+              <input id="city" type="text" required />
+              <label for="city">City</label>
+            </div>
+          </td>
+          <td>
+            <div class="input-box">
+              <i class="fa-solid fa-map"></i>
+              <input id="state" type="text" required />
+              <label for="state">State</label>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Register button -->
+        <tr>
+          <td colspan="3">
+            <input id="btn" type="submit" value="Register" />
+          </td>
+        </tr>
+
+        <!-- Link to login page -->
+        <tr>
+          <td colspan="3">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <!-- Registration form ends -->
+  </body>
+</html>
